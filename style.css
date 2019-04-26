@@ -1,0 +1,389 @@
+.blocks {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.blocks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(18, 40px);
+  grid-template-rows: repeat(3, 40px);
+  grid-gap: 1.5rem;
+}
+.item { background-color: #EECCCC; }
+
+.wrapper:hover {
+  cursor: url('https://i.ibb.co/6bycCv7/Ellipse-4.png'), default;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px auto;
+  width: 250px;
+  height: 100px;
+  background: white;
+  border-radius: 75px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+}
+
+.name:hover {
+  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+}
+
+.name:hover:before, .name:hover:after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 100px;
+  background: #FDA8CF;
+  border-radius: 75px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+
+.name:hover:after {
+  background: #F3CE5E;
+  animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;
+  }
+}
+
+.wrap-do {
+  display: flex;
+  justify-content: space-between;
+ /* padding: 10% 20%;*/
+ margin: 0 auto;
+ padding-left: 30%;
+ padding-right: 25%;
+}
+
+.underlined {
+  color: black;
+  flex: 1;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #EECCCC 0, #EECCCC 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background .5s;
+  border-radius: 75px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+.underlined:hover {
+  color: black;
+  text-decoration: none;
+  background-size: 100% 100%;
+}
+
+.underlined--offset {
+  color: black;
+  text-decoration: none;
+  background-position: 0 0.2em;
+  /*//didn't find another solution than mask the underline shape by a box shadow with the same color than the bg*/
+  box-shadow: inset 0 -.5em 0 0 white;
+}
+
+.front {
+  justify-content: space-between;
+  border-radius: 75px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.manager {
+  justify-content: space-between;
+  border-radius: 75px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.description {
+  margin-bottom: 0px;
+}
+
+/*carousel*/
+html, body, main {
+  width: 100%;
+  height: 90%;
+  margin: 0;
+  padding: 0;
+}
+
+#carousel {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+#carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+#carousel div img {
+  width: 400px;
+  transition: width 1s;
+}
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideLeft img {
+  width: 200px;
+}
+#carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideRight img {
+  width: 200px;
+}
+#carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.prev img {
+  width: 300px;
+}
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.prevLeftSecond img {
+  width: 200px;
+}
+#carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.next img {
+  width: 300px;
+}
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.nextRightSecond img {
+  width: 200px;
+}
+
+.buttons {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn {
+  background-color: #EECCCC;
+  color: white;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #e8b9b9;
+}
+
+.btn:active,
+.btn:focus,
+.btn.active,
+.btn:active:focus {
+   background-image: none;
+   outline: 0;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+}
+
+/*footer*/
+.footer #button{
+  width:35px;
+  height:35px;
+  border: #727172 12px solid;
+  border-radius:35px;
+  margin:0 auto;
+  position:relative;
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+  width:35px;
+  height:35px;
+  border: #3A3A3A 12px solid;
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  position:relative;
+}
+.footer {
+  bottom:0;
+  left:0;
+  position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  z-index:999;
+}
+.footer:hover {
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  height: 10em;
+}
+.footer #container{
+  margin-top:5px;
+  width:100%;
+  height:100%;
+  position:relative;
+  top:0;
+  left:0;
+  background: #3A3A3A;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+  width:150px;
+  height:auto;
+  margin:0 auto;
+}
+.footer_center{
+  width:500px;
+  float:left;
+  text-align:center;
+}
+.footer h3{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-top:70px;
+  margin-left:40px;
+}
+
