@@ -407,3 +407,46 @@ html, body, main {
   margin-left:40px;
 }
 
+@media(max-width: 992px) {
+  .wrapper {
+    grid-template-columns: repeat(20, 40px);
+    grid-template-rows: repeat(3, 40px);
+  }
+  .buttons {
+    top: 128%;
+  }
+}
+
+@media(max-width: 768px) {
+  .wrap-do {
+    padding-left: 12%;
+    padding-right: 12%
+  }
+  .wrapper {
+    grid-template-columns: repeat(12, 40px);
+    grid-template-rows: repeat(3, 40px);
+  }
+  #carousel {
+    top: 43%;
+  }
+  .buttons {
+    top: 155%;
+  }
+}
+
+@media(max-width: 576px) {
+  .wrap-do {
+    padding-left: 12%;
+    padding-right: 12%
+  }
+  .wrapper {
+    grid-template-columns: repeat(8, 40px);
+    grid-template-rows: repeat(3, 40px);
+  }
+  #carousel {
+    top: 43%;
+  }
+  .buttons {
+    top: 166%;
+  }
+}
