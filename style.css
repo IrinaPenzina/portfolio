@@ -444,9 +444,9 @@ html, body, main {
     grid-template-rows: repeat(3, 40px);
   }
   #carousel {
-    top: 45%;
+    top: 50%;
   }
   .buttons {
-    top: 173%;
+    top: 182%;
   }
 }
