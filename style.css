@@ -443,6 +443,9 @@ html, body, main {
     grid-template-columns: repeat(6, 40px);
     grid-template-rows: repeat(3, 40px);
   }
+  .name {
+    margin-bottom: 0px;
+  }
   #carousel {
     top: 50%;
   }
