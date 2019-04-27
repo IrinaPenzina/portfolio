@@ -436,17 +436,17 @@ html, body, main {
 
 @media(max-width: 576px) {
   .wrap-do {
-    padding-left: 12%;
-    padding-right: 12%
+    padding-left: 50px;
+    padding-right: 0;
   }
   .wrapper {
-    grid-template-columns: repeat(8, 40px);
+    grid-template-columns: repeat(6, 40px);
     grid-template-rows: repeat(3, 40px);
   }
   #carousel {
-    top: 43%;
+    top: 45%;
   }
   .buttons {
-    top: 166%;
+    top: 173%;
   }
 }
