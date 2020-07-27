@@ -58,8 +58,10 @@
   font-weight: lighter;
 }
 
-.irina {
-  margin-left: 45%;
+.irina h1 {
+  margin-left: 42%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
 }
 
 .link {

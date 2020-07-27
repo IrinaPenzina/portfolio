@@ -1,0 +1,31 @@
+.footer {
+  background: #c70039;
+  display: flex;
+  justify-content: space-around;
+  height: 350px;
+  padding: 45px 50px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-link:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.lists {
+
+ /* justify-content: flex-end;*/
+}
+
