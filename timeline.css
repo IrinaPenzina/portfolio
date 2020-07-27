@@ -71,9 +71,9 @@ div.history {
   position: -webkit-sticky;
   position: sticky;
   top: 5rem;
-  color: #888;
-  margin-left: -102px;
+  margin-left: -80px;
   font-size: 1em;
+  line-height: 1.7em;
 }
 @media (min-width: 62em) {
   #timeline h3 {
@@ -169,4 +169,14 @@ svg {
   border: 3px solid white;
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+
+
+
+@media(max-width: 576px) {
+  #timeline h3 {
+    margin-left: -15px;
+  }
+
 }

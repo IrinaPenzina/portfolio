@@ -146,107 +146,6 @@ html, body, main {
   padding: 0;
 }
 
-#carousel {
-  position: relative;
-  height: 400px;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-  overflow: hidden;
-
-}
-#carousel div {
-  position: absolute;
-  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
-  opacity: 1;
-}
-#carousel div img {
-  height: 400px;
-  width: 650px;
-  object-fit: cover;
-  transition: width 1s;
-}
-#carousel div.hideLeft {
-  left: 0%;
-  opacity: 0;
-  transform: translateY(50%) translateX(-50%);
-}
-#carousel div.hideLeft img {
-  width: 200px;
-}
-#carousel div.hideRight {
-  left: 100%;
-  opacity: 0;
-  transform: translateY(50%) translateX(-50%);
-}
-#carousel div.hideRight img {
-  width: 200px;
-}
-#carousel div.prev {
-  z-index: 5;
-  left: 30%;
-  transform: translateY(50px) translateX(-50%);
-}
-#carousel div.prev img {
-  width: 300px;
-}
-#carousel div.prevLeftSecond {
-  z-index: 4;
-  left: 15%;
-  transform: translateY(50%) translateX(-50%);
-  opacity: 0.7;
-}
-#carousel div.prevLeftSecond img {
-  width: 200px;
-}
-#carousel div.selected {
-  z-index: 10;
-  left: 50%;
-  transform: translateY(0px) translateX(-50%);
-}
-#carousel div.next {
-  z-index: 5;
-  left: 70%;
-  transform: translateY(50px) translateX(-50%);
-}
-#carousel div.next img {
-  width: 300px;
-}
-#carousel div.nextRightSecond {
-  z-index: 4;
-  left: 85%;
-  transform: translateY(50%) translateX(-50%);
-  opacity: 0.7;
-}
-#carousel div.nextRightSecond img {
-  width: 200px;
-}
-
-.buttons {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.btn {
-  background-color: #EECCCC;
-  color: white;
-}
-
-.btn:hover {
-  color: white;
-  background-color: #e8b9b9;
-}
-
-.btn:active,
-.btn:focus,
-.btn.active,
-.btn:active:focus {
-   background-image: none;
-   outline: 0;
-   -webkit-box-shadow: none;
-   box-shadow: none;
-}
 
 
 
@@ -262,9 +161,6 @@ html, body, main {
     grid-template-columns: repeat(20, 40px);
     grid-template-rows: repeat(3, 40px);
   }
-  .buttons {
-    top: 128%;
-  }
 }
 
 @media(max-width: 768px) {
@@ -275,12 +171,6 @@ html, body, main {
   .wrapper {
     grid-template-columns: repeat(12, 40px);
     grid-template-rows: repeat(3, 40px);
-  }
-  #carousel {
-    top: 43%;
-  }
-  .buttons {
-    top: 155%;
   }
 }
 
@@ -296,10 +186,10 @@ html, body, main {
   .name {
     margin-bottom: 0px;
   }
-  #carousel {
-    top: 50%;
+  .irina h1 {
+    margin-left: 18%;
   }
-  .buttons {
-    top: 182%;
+  .link {
+    margin-left: 32%;
   }
 }
