@@ -53,6 +53,7 @@ div.history {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5rem;
+  text-align: justify;
 }
 #timeline div:after {
   content: '';
