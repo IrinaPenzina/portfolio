@@ -12,7 +12,9 @@ h2 {
   font-size: 21px;
 }
 
-
+.nested {
+  top: 5px;
+}
 div.header {
   height: auto;
   text-align: center;
@@ -37,7 +39,6 @@ div.header:after {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
   /* IE6-9 */
 }
-
 
 div.history {
   display: flex;
