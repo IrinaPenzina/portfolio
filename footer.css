@@ -30,7 +30,7 @@ h5 {
 
 @media(max-width: 1400px) {
   .footer {
-    height: 650px;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
