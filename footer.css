@@ -2,13 +2,12 @@
   background: #c70039;
   display: flex;
   justify-content: space-between;
-  height: 450px;
+  height: 100%;
   width: 100%;
   padding: 45px 50px;
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
-
 }
 
 h5 {
@@ -28,11 +27,17 @@ h5 {
 
 
 
-@media(max-width: 1400px) {
+@media(max-width: 1024px) {
   .footer {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
+  }
+}
+
+@media(max-width: 768px) {
+  .footer {
+    height: 156%;
   }
 }

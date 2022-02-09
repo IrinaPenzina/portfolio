@@ -182,14 +182,12 @@ html, body, main {
   }
   .wrapper {
     grid-template-columns: repeat(6, 40px);
-    grid-template-rows: repeat(3, 40px);
+    grid-template-rows: repeat(5, 40px);
   }
   .name {
     margin-bottom: 0px;
   }
-  .irina h1 {
-    margin-left: 18%;
-  }
+
   .link {
     margin-left: 32%;
   }
