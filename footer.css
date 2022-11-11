@@ -29,7 +29,7 @@ h5 {
 
 @media(max-width: 1024px) {
   .footer {
-    height: 100%;
+    height: 112%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
@@ -38,6 +38,6 @@ h5 {
 
 @media(max-width: 768px) {
   .footer {
-    height: 156%;
+    height: 160%;
   }
 }
